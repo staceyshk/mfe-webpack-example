@@ -1,0 +1,34 @@
+{
+  "name": "react-dynamic-routes_app1",
+  "version": "0.0.0",
+  "private": true,
+  "devDependencies": {
+    "@babel/core": "^7.23.2",
+    "@babel/plugin-transform-react-jsx": "^7.22.15",
+    "@babel/preset-react": "7.18.6",
+    "@babel/preset-typescript": "^7.23.2",
+    "@types/react": "^18.2.31",
+    "@types/react-dom": "18.0.11",
+    "babel-loader": "9.1.2",
+    "html-webpack-plugin": "5.5.1",
+    "serve": "14.2.0",
+    "typescript": "^5.2.2",
+    "webpack": "5.80.0",
+    "webpack-cli": "5.0.1",
+    "webpack-dev-server": "4.13.3"
+  },
+  "scripts": {
+    "start": "webpack-cli serve",
+    "build": "webpack --mode production",
+    "serve": "serve dist -p 3001",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@module-federation/utilities": "^3.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "path-browserify": "^1.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.17.0"
+  }
+}
