@@ -1,0 +1,19 @@
+{
+  "name": "react-dynamic-routes",
+  "private": true,
+  "workspaces": [
+    "./app1",
+    "./app2",
+    "./app3"
+  ],
+  "version": "0.0.0",
+  "scripts": {
+    "start-all": "yarn app1 & yarn app2 & yarn app3",
+    "app1": "cd app1 && yarn install && yarn start",
+    "app2": "cd app2 && yarn install && yarn start",
+    "app3": "cd app3 && yarn install && yarn start"
+  },
+  "devDependencies": {
+    "wait-on": "7.0.1"
+  }
+}
