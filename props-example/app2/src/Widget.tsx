@@ -1,7 +1,12 @@
 import moment from 'moment';
 import { Routes, Route, Link } from 'react-router-dom';
 
-export default function Widget() {
+interface WidgetProps {
+  hostPassedProp?: string;
+}
+
+const Widget = (props: WidgetProps) => {
+  const { hostPassedProp } = props;
   return (
     <div
       style={{
@@ -14,6 +19,7 @@ export default function Widget() {
       <Routes>
         <Route path='/' element= {
           <>
+            {hostPassedProp && <h1>{props.hostPassedProp}</h1>}
             <h2>App 2 Widget</h2>
             <p>App2 Moment Dep ({moment.version}): {moment().format('MMMM Do YYYY, h:mm:ss a')}</p>
             <br />
@@ -31,3 +37,5 @@ export default function Widget() {
     </div>
   );
 }
+
+export default Widget;

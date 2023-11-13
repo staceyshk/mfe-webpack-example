@@ -31,8 +31,9 @@ const AppComponent = (elementJson: any, index: number) => {
       module: elementJson.module
     })
   );
+
   const path = `${elementJson.scope}/*`;
-  return (<Route key={index} path={path} element={ <RemoteComponent /> } />); 
+  return (<Route key={index} path={path} element={ <RemoteComponent hostPassedProp='Hello from the Host!' /> } />); 
 }
 
 function App() {
