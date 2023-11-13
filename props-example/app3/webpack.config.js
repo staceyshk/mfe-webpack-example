@@ -1,5 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ModuleFederationPlugin = require('webpack').container.ModuleFederationPlugin;
+const { ModuleFederationPlugin } = require('webpack').container;
 const path = require('path');
 
 module.exports = {
@@ -7,11 +7,8 @@ module.exports = {
   devServer: {
     static: {
       directory: path.join(__dirname, 'dist'),
-      publicPath: '/'
     },
-    port: 3001,
-    historyApiFallback: true,
-    open: true,
+    port: 3003,
   },
   output: {
     publicPath: 'auto',
@@ -51,7 +48,11 @@ module.exports = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: 'app1',
+      name: 'app3',
+      filename: 'remoteEntry.js',
+      exposes: {
+        './Widget': './src/Widget',
+      },
       shared: {
         react: { singleton: true },
         'react-dom': { singleton: true },
@@ -61,10 +62,6 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: './public/index.html',
-      favicon: './public/favicon.ico',
-      publicPath: '/',
     }),
   ],
 };
-// This fixes a bug with webpack where subroutes in the child pull main from wrong location
-// https://github.com/module-federation/module-federation-examples/pull/2170

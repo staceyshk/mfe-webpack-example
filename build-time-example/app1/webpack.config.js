@@ -12,6 +12,7 @@ module.exports = (env) => {
       },
       port: 3001,
       historyApiFallback: true,
+      open: true,
     },
     output: {
       publicPath: 'auto',
