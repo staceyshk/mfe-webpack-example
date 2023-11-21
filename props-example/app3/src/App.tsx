@@ -1,9 +1,9 @@
-import LocalButton from './Widget';
+import Widget from './Widget';
 
 const App = () => (
   <div>
     <h2>App 3</h2>
-    <LocalButton />
+    <Widget />
   </div>
 );
 

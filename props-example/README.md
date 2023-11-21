@@ -1,4 +1,4 @@
-# Micro frontend Host Example
+# Micro Frontend Host Example
 
 This example demos a basic host application loading remote component.
 
