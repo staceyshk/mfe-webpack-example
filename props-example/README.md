@@ -1,4 +1,4 @@
-# Dynamic System Host Example
+# Micro frontend Host Example
 
 This example demos a basic host application loading remote component.
 
