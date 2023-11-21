@@ -14,12 +14,11 @@ const MainPage = () => {
     <h2>App 1</h2>
     <p>
       The Runtime Remotes example will take advantage Module Federation <strong>remotes</strong> and{' '}
-      <strong>exposes</strong>. It will use a json file at the <a href='https://github.com/module-federation/utilities/blob/main/runtime/importRemote/README.md'>importRemote</a> utility to load remotes during execution. See
-      
+      <strong>exposes</strong>. It will use a json file at the <a href='https://github.com/module-federation/utilities/blob/main/runtime/importRemote/README.md'>importRemote</a> utility to load remotes during execution.
     </p>
-    <Link to='app2'>Go to App 2</Link>
+    <Link to='app2'>Go to App 2 Widget</Link>
     <br />
-    <Link to='app3'>Go to App 3</Link>
+    <Link to='app3'>Go to App 3 Widget</Link>
     <br />
   </div>)
 }

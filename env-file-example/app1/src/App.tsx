@@ -17,9 +17,9 @@ const MainPage = () => {
       The Build Time Remotes with Env Files example will take advantage Module Federation <strong>remotes</strong> and{' '}
       <strong>exposes</strong>. The remote locations are included with an env file. You can use multiple env files during the build to change the location of remotes.
     </p>
-    <Link to='app2'>Go to App 2</Link>
+    <Link to='app2'>Go to App 2 Widget</Link>
     <br />
-    <Link to='app3'>Go to App 3</Link>
+    <Link to='app3'>Go to App 3 Widget</Link>
     <br />
   </div>)
 }

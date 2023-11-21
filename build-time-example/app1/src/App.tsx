@@ -18,9 +18,9 @@ const MainPage = () => {
       <strong>exposes</strong>. It will not load any components or modules that have been loaded
       already. The remotes must be included in the webpack.config.js file at build time.
     </p>
-    <Link to='app2'>Go to App 2</Link>
+    <Link to='app2'>Go to App 2 Widget</Link>
     <br />
-    <Link to='app3'>Go to App 3</Link>
+    <Link to='app3'>Go to App 3 Widget</Link>
     <br />
   </div>)
 }
