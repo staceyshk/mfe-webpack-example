@@ -1,5 +1,5 @@
 {
-  "name": "react-dynamic-routes",
+  "name": "mfe-webpack-example",
   "private": true,
   "workspaces": [
     "./app1",
