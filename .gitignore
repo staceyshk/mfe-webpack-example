@@ -20,6 +20,9 @@ pids
 lib-cov
 .idea
 
+# Visual Studio Code Settings
+*.vscode
+
 # Coverage directory used by tools like istanbul
 coverage
 *.lcov
