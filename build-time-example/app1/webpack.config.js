@@ -54,8 +54,7 @@ module.exports = (env) => {
       new ModuleFederationPlugin({
         name: 'app1',
         remotes: {
-          App2: 'app2@http://localhost:3002/remoteEntry.js',
-          App3: 'app3@http://localhost:3003/remoteEntry.js',
+          App2: 'app2@http://localhost:3002/remoteEntry.js'
         },
         shared: {
           react: { singleton: true },
