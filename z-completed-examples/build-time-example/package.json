@@ -1,0 +1,19 @@
+{
+  "name": "mfe-webpack-example",
+  "private": true,
+  "workspaces": [
+    "./app1",
+    "./app2",
+    "./app3"
+  ],
+  "version": "0.0.0",
+  "scripts": {
+    "start-all": "npm run app1 & npm run app2 & npm run app3",
+    "app1": "cd app1 && npm install && npm start",
+    "app2": "cd app2 && npm install && npm start",
+    "app3": "cd app3 && npm install && npm start"
+  },
+  "devDependencies": {
+    "wait-on": "7.0.1"
+  }
+}
