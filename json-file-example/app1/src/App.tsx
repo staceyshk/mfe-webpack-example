@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { LazyExoticComponent } from 'react';
 import { importRemote } from '@module-federation/utilities';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import remoteListJson from './remotes.json';
@@ -18,11 +18,12 @@ const MainPage = () => {
     </p>
     <Link to='app2'>Go to App 2 Widget</Link>
     <br />
-    <Link to='app3'>Go to App 3 Widget</Link>
+    {/* Add app 3 link here */}
     <br />
   </div>)
 }
 
+// This is the function where remotes are loaded and a route is created
 const AppComponent = (elementJson: any, index: number) => {
   const RemoteComponent = React.lazy(() => importRemote(
     { url: elementJson.url,

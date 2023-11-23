@@ -2,7 +2,7 @@ import React from 'react';
 import { importRemote } from '@module-federation/utilities';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 const App2Widget = React.lazy(() => import('App2/Widget'));
-const App3Widget = React.lazy(() => import('App3/Widget'));
+// Add import for app 3 widget
 
 const MainPage = () => {
   return (<div
@@ -20,7 +20,7 @@ const MainPage = () => {
     </p>
     <Link to='app2'>Go to App 2 Widget</Link>
     <br />
-    <Link to='app3'>Go to App 3 Widget</Link>
+    {/* Add a link for app 3 here */}
     <br />
   </div>)
 }
@@ -33,7 +33,7 @@ function App() {
           <Routes>
             <Route path='/' element= { <MainPage />}/>
             <Route path='/app2/*' element= { <App2Widget/> } />
-            <Route path='/app3' element= { <App3Widget/> } />
+            {/* Add a route for app 3 here */}
             <Route path='*' element= { <h1>Error</h1> }/>
           </Routes>
         </React.Suspense>

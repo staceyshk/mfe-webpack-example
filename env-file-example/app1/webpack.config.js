@@ -64,6 +64,7 @@ module.exports = (env) => {
         name: 'app1',
         remotes: {
           App2: `app2@${process.env.APP2_URL}/remoteEntry.js`,
+          App3: `app3@${process.env.APP3_URL}/remoteEntry.js`,
         },
         shared: {
           react: { singleton: true },
