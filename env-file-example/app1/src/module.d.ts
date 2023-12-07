@@ -1,2 +1,2 @@
 declare module 'App2/Widget';
-declare module 'App3/Widget';
+// Add app 3 here
