@@ -32,8 +32,8 @@ function App() {
         <React.Suspense fallback="Loading System">
           <Routes>
             <Route path='/' element= { <MainPage />}/>
-            <Route path='/app2/*' element= { <App2Widget/> } />
-            <Route path='/app3' element= { <App3Widget/> } />
+            <Route path='app2/*' element= { <App2Widget/> } />
+            <Route path='app3' element= { <App3Widget/> } />
             <Route path='*' element= { <h1>Error</h1> }/>
           </Routes>
         </React.Suspense>
